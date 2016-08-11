@@ -1,13 +1,72 @@
 nav {
     display: block;
 }
+
+nav{
+  border: 3px double blue;
+  width: 815px;
+  margin: 50px;
+}
+
+nav:hover{
+  color: yellow;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
 body {
     background-color: lightblue;
-    background-image:
+    font-family: 'Droid Sans', sans-serif;
 }
 .main-img {
   width: 750px;
   height: 500px;
   margin: 40px;
-  border: 3px blue dotted;
+  margin-top: 10px;
+  border: 3px inset blue;
+  padding: 20px;
+}
+
+h1{
+  margin: 30px;
+  padding:10px;
+}
+
+p{
+  margin: 50px;
+  padding: 30px;
+  border: 3px dashed blue;
+  padding: 20px;
+  width: 750px;
+}
+
+h2{
+  margin-left: 30px;
+  padding:20px;
+}
+
+@keyframes blink {
+  50% { border-color: #ffffff;}
+}
+
+.fun-fact {
+  margin: 50px;
+  padding: 30px;
+  border: 3px dashed red;
+  padding: 20px;
+  width: 75%;
+  animation: blink .5s step-end infinite alternate;
+}
+
+a{
+  margin: 50px;
+  padding-bottom: 30px;
+}
+
+.superheader{
+  font-weight: lighter;
+}
+
+#textystuff{
+ font-size: 18px;
 }
