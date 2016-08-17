@@ -6,6 +6,7 @@ nav{
   border: 3px double blue;
   width: 815px;
   margin: 50px;
+  float: left;
 }
 
 nav:hover{
@@ -18,6 +19,7 @@ body {
     background-color: lightblue;
     font-family: 'Droid Sans', sans-serif;
 }
+
 .main-img {
   width: 750px;
   height: 500px;
@@ -37,12 +39,31 @@ p{
   padding: 30px;
   border: 3px dashed blue;
   padding: 20px;
-  width: 750px;
+  width: 25%;
+  height: auto;
 }
 
 h2{
   margin-left: 30px;
   padding:20px;
+}
+
+h3{
+  margin-left: 30px;
+  padding:20px;
+}
+
+.quote{
+  width: 25%;
+  height: 10%;
+  display: flex;
+  position: static;
+  right: 10px;
+  top:20px;
+}
+
+.SeriousFact{
+  display: block;
 }
 
 @keyframes blink {
@@ -54,8 +75,11 @@ h2{
   padding: 30px;
   border: 3px dashed red;
   padding: 20px;
-  width: 75%;
+  width: 50%;
   animation: blink .5s step-end infinite alternate;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 a{
@@ -69,4 +93,6 @@ a{
 
 #textystuff{
  font-size: 18px;
+ flex-grow: 1;
+ justify-content: space-between;
 }
